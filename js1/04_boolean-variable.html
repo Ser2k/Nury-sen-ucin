@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript - Boolean Variable</title>
+</head>
+<body>
+    <div>
+        Available: <span id="stock" class="text"></span>
+    </div>
+    <div>
+        Shipping: <span id="shipping" class="text"></span>
+    </div>
+
+    <script>
+        var good = "success";
+        var bad = "error";
+
+        var elStock = document.getElementById('stock');
+        // elStock.classList.remove(good); // klas ayyrmak
+        elStock.classList.add(good); // taze klas gosmak
+        elStock.textContent = good;
+
+        var elShip = document.getElementById('shipping');
+        elShip.className = bad; // onki hemme klaslary pozup gosmak
+        elShip.textContent = bad; 
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript - Functions, Methods &amp; Objects - Adding properties</title>
+</head>
+<body>
+    <h2>hotel facilities</h2>
+    <div id="hotelName"></div>
+    <div>
+        <p id="pool">Pool</p>
+        <p id="gym">Gym</p>
+    </div>
+
+    <script>
+        // class Hotel {
+        //     name = 'Park'
+        //     rooms = 120
+        //     booked = 0
+        //     checkAvailability = () => {
+        //         return this.rooms - this.booked
+        //     }
+        // }
+
+        // let obj = new Hotel();
+        // obj.name;
+        
+        // Set up the object
+        var hotel = {
+            name: 'Park',
+            rooms: 120,
+            booked: 77
+        };
+
+        hotel.gym = true;
+        hotel.pool = false;
+        delete hotel.booked;
+
+        console.log(hotel);
+
+        // var hotel = {
+        //     name: 'Park',
+        //     rooms: 120,
+        //     gym: true,
+        //     pool: false,
+        // };
+
+
+        // Update the HTML
+        var elName = document.getElementById('hotelName'); // Get element
+        elName.textContent = hotel.name; // Update HTML with property of the object
+
+        var elPool = document.getElementById('pool'); // Get element
+        elPool.className = hotel.pool; // Update HTML with property of the object
+
+        var elGym = document.getElementById('gym'); // Get element
+        elGym.className = hotel.gym; // Update HTML with property of the object
+
+        console.log(hotel)
+    </script>
+</body>
+</html>

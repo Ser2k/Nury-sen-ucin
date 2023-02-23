@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript - Update Array</title>
+</head>
+<body>
+    <div class="message">
+        Color:
+        <span id="colors">
+            We were unable to find your color choice. Please try again...
+        </span>
+    </div>
+
+    <script>
+        var colors = ['white', 'black', 'red'];
+        colors[2] = 'blue';
+
+        var el = document.getElementById('colors');
+        el.textContent = colors[2];
+    </script>
+</body>
+</html>

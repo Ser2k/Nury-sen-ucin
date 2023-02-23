@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript - Array Literal</title>
+</head>
+<body>
+    <div class="message">
+        Color:
+        <span id="colors">
+            We were unable to find your color choice. Please try again...
+        </span>
+    </div>
+
+    <script>
+        var colors;
+        colors = ['white', 'black', 'red'];
+
+        // var colors = new Array('white', 'black', 'red');
+        // colors[0] => white
+        // colors[1] => black
+        // colors[2] => red
+
+        var el = document.getElementById('colors');
+        el.textContent = colors[2];
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript - String Operator</title>
+</head>
+<body>
+    <div id="greeting" class="message">
+        Hello
+        <span id="name">friend</span>!
+    </div>
+
+    <script>
+        var greeting = 'Howdy ';
+        var name = 'Molly';
+        var welcomeMessage = greeting + name + '!';
+
+        var el = document.getElementById('greeting');
+        el.textContent = welcomeMessage;
+    </script>
+</body>
+</html>

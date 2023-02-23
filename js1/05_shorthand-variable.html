@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript - Shorthand Variable</title>
+</head>
+<body>
+    <div id="cost">
+        Cost: $5 per tile
+    </div>
+
+    <script>
+        var price = 5;
+        var quantity = 14;
+        var total = price * quantity;
+
+        //  METHOD 2
+        // var price, quantity, total;
+        // price = 5;
+        // quantity = 14;
+        // total = price * quantity;
+
+        // METHOD 3
+        // var price = 5, quantity = 14;
+        // var total = price * quantity;
+
+        document.getElementById('cost').textContent = '$' + total;
+    </script>
+</body>
+</html>

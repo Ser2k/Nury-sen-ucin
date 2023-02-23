@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Function</title>
+</head>
+<body>
+    <div id="message"></div>
+    <!-- <button type="button" onclick="discount()">Skidka</button>
+    <button type="button" onclick="normal()">Adaty</button> -->
+    <button type="button" id="btnDiscount">Skidka</button>
+    <button type="button" id="btnNormal">Adaty</button>
+    
+    <script>
+        // function welcome() {
+        //     console.log('hello world!');
+        // }
+        // const welcome = () => {
+        //     console.log('hello world!');
+        // }
+
+        const discount = () => {
+            let el = document.getElementById('message');
+            el.textContent = 'Sign up to receive our newsletter for 10% off!';
+            el.className = 'text-danger';
+            console.log(1);
+        }
+
+        const normal = () => {
+            let el = document.getElementById('message');
+            el.textContent = 'Welcome to our site!';
+            el.className = 'text-secondary';
+            console.log(2);
+        }
+
+        // document.getElementById("btnDiscount").addEventListener("click", discount);
+        // document.getElementById("btnNormal").addEventListener("click", normal);
+
+        document.getElementById("btnDiscount").addEventListener("mouseover", discount);
+        document.getElementById("btnNormal").addEventListener("mouseover", normal);
+    </script>
+</body>
+</html>
